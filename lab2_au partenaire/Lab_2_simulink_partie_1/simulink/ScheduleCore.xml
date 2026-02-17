@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2025a_202406271200">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="e5a071a9-75ca-409d-91aa-fd0db510058e">
+    <globalData type="sltp.mm.core.GlobalData" uuid="0bd7dc4a-cf70-4f9f-b89f-6f2ffc09c395">
+      <dataName>portIn1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="5e07197b-1de9-47a3-8a66-431e3102011e">
+      <dataName>portIn2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="ddb7b545-343a-48b9-b5f5-c6538c3f8556">
+      <dataName>portIn3</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="ca463ab2-c5f2-468d-bbda-2884bc4e5dd0">
+      <dataName>portOut1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <priorityDirection>HighNumberLast</priorityDirection>
+    <defaultBarrierBehavior type="sltp.mm.core.BarrierBehavior" uuid="21ef4c36-6812-4492-adef-db474489460b"/>
+    <defaultEventBehavior type="sltp.mm.core.EventBehavior" uuid="fcfa1f37-b02b-4164-8e21-4104259530e9"/>
+    <editorState type="sltp.mm.core.EditorState" uuid="766c8a09-62e6-47a0-98df-d78119d1eb92">
+      <isSynchronized>true</isSynchronized>
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="b9bed002-f3c9-4053-b8dd-04fb7a8f3fd3"/>
+    </editorState>
+    <rootTask type="sltp.mm.core.Task" uuid="e151f46e-a93e-4f11-b351-79699b6dc074">
+      <context type="sltp.mm.core.Context" uuid="e5a071a9-75ca-409d-91aa-fd0db510058e"/>
+      <explicit>false</explicit>
+      <name>Default</name>
+      <priority>-2147483648</priority>
+      <subgraph type="sltp.mm.core.Graph" uuid="6bb6ec3f-18e3-462e-9529-c0f03ec30af0">
+        <tasks type="sltp.mm.core.Task" uuid="f6c62d48-97b3-4c43-be02-66fdde9323dd">
+          <baseTask>true</baseTask>
+          <context type="sltp.mm.core.Context" uuid="e5a071a9-75ca-409d-91aa-fd0db510058e"/>
+          <explicit>false</explicit>
+          <id>1</id>
+          <isTimed>true</isTimed>
+          <name>Cont</name>
+          <priority>40</priority>
+          <rates type="sltp.mm.core.Rate" uuid="5155112b-3ae4-4020-a7b8-63bf1efe50ca">
+            <annotation>Cont</annotation>
+            <color>255</color>
+            <hasBlocks>true</hasBlocks>
+            <identifier>Continuous00</identifier>
+            <rateIndex>0</rateIndex>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <period>0.0</period>
+            </rateSpec>
+            <sti>0</sti>
+          </rates>
+          <rates type="sltp.mm.core.Rate" uuid="056d80fb-97e5-42fe-be3b-ee782c337e8c">
+            <annotation>FiM</annotation>
+            <color>2105376255</color>
+            <hasBlocks>true</hasBlocks>
+            <rateIndex>1</rateIndex>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <offset>1.0</offset>
+              <period>0.0</period>
+            </rateSpec>
+            <sti>1</sti>
+          </rates>
+        </tasks>
+      </subgraph>
+    </rootTask>
+  </sltp.mm.core.Context>
+</sltp_graph>
